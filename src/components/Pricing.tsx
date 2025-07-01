@@ -65,7 +65,7 @@ const Pricing: React.FC = () => {
               </div>
                 <div className="bg-blue-50 rounded-lg p-4 mb-6">
           <h4 className="font-semibold text-gray-900 mb-0">
-            📅 Saturday, 5th July 2025 | 🕛 12:00 PM – 8:00 PM
+            📅 Saturday, 5th July 2025 <br/> 🕛 12:00 PM – 8:00 PM
           </h4>
         </div>
 
