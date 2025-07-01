@@ -22,8 +22,8 @@ const Pricing: React.FC = () => {
     "1-year access to all recordings",
     "Private Discord community",
     "Resume and interview guidance",
-    "Job placement assistance",
-    "Money-back guarantee"
+   
+   
   ];
 
   return (
@@ -63,6 +63,13 @@ const Pricing: React.FC = () => {
                 <h4 className="font-semibold text-gray-900 mb-2">Foundational Kubernetes</h4>
                 <p className="text-gray-600 text-sm">Perfect for beginners starting their K8s journey</p>
               </div>
+                <div className="bg-blue-50 rounded-lg p-4 mb-6">
+          <h4 className="font-semibold text-gray-900 mb-0">
+            📅 Saturday, 5th July 2025 | 🕛 12:00 PM – 8:00 PM
+          </h4>
+        </div>
+
+
             </div>
 
             <ul className="space-y-3 mb-8">

@@ -9,6 +9,7 @@ import Testimonials, { K8sTerminalBody } from './components/Testimonials';
 import Pricing from './components/Pricing';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import WhatsApp from './components/Whatspp.tsx';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
       <Pricing />
       {/* <Contact /> */}
       <Footer />
+      <WhatsApp />
     </div>
   );
 }
