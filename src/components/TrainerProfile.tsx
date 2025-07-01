@@ -61,14 +61,19 @@ const TrainerProfile: React.FC = () => {
               
               <div className="relative z-10">
                 <div className="flex items-center mb-6">
-                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-2xl font-bold">VD</span>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold">Vimal Daga</h3>
-                    <p className="text-blue-100">Senior DevOps Architect & Kubernetes Expert</p>
-                  </div>
+                <div className="w-20 h-20 rounded-full overflow-hidden mr-4 border-2 border-white">
+                  <img
+                    src="/assets/vimal.jpeg" // <-- Change this path as per your folder structure
+                    alt="Vimal Daga"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
+                <div>
+                  <h3 className="text-2xl font-bold">Vimal Daga</h3>
+                  <p className="text-blue-100">Senior DevOps Architect & Kubernetes Expert</p>
+                </div>
+              </div>
+
 
                 <div className="mb-6">
                   <Quote className="text-blue-200 mb-3" size={24} />

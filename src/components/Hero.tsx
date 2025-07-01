@@ -36,15 +36,26 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8"
         >
-          <button className="group bg-k8s-blue hover:bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center">
-            Register for Day 1 – ₹2500
-            <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
-          </button>
-          
-          <button className="group bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 border border-white/20 flex items-center">
-            Register for Day 1 & 2 – ₹4500
-            <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
-          </button>
+       <a
+        href="https://rzp.io/rzp/pPLy6W4x"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group bg-k8s-blue hover:bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center"
+      >
+        Register for Day 1 – ₹2500
+        <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+      </a>
+
+      <a
+        href="https://rzp.io/rzp/iVAwPNX"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 border border-white/20 flex items-center"
+      >
+        Register for Day 1 & 2 – ₹4500
+        <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+      </a>
+
         </motion.div>
 
         <motion.div
