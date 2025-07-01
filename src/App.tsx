@@ -37,7 +37,7 @@ function App() {
       </section>
       <Testimonials />
       <Pricing />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );
