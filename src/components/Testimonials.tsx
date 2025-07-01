@@ -38,7 +38,21 @@ const students = [
     title: "DevOps | Full Stack Developer",
     avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHspredHFM_Ig/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729926571919?e=1737590400&v=beta&t=EopKPQqmr1fMBHnO3vVCQ-iI51PNnI8XhKTWumH0CI0",
     linkedin: "https://www.linkedin.com/in/pratibhakokil/"
-  }
+  },
+  {
+      name: "Jivan Bhardwaj",
+      title: "DevOps Engineer at Echelon Edge",
+      avatar: "https://media.licdn.com/dms/image/v2/C4E03AQEvxMngWtOM1g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1628692879304?e=1741824000&v=beta&t=RRN0Njf2W6uv_EPjspUlYUhnQotymJIJG9XOQPUe3Jk",
+      linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7115702316866940929"
+   
+  },
+   {
+    
+      name: "Prateek Srivastava",
+      title: "DevOps Engineer - II at o9 Solutions",
+      avatar: "https://media.licdn.com/dms/image/v2/C5603AQHZ852DgWHZCw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517809201722?e=1741824000&v=beta&t=O643r_bMfCdAF1iw9E46iHEVE2riktLzWrERvtmFh_Q",
+      linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7115702316866940929"
+    },
 ];
 
 const Testimonials: React.FC = () => {
