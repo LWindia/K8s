@@ -156,7 +156,7 @@ const CourseContent: React.FC = () => {
   const currentModules = activeDay === 'day1' ? day1Modules : day2Modules;
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white" id='curriculum'>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

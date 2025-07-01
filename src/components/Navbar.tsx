@@ -7,8 +7,8 @@ const navLinks = [
   { label: 'What You Will Learn', href: '#learn' },
   { label: 'Curriculum', href: '#curriculum' },
   { label: 'Pricing', href: '#pricing' },
-  { label: 'Trainer', href: '#trainer' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Mentor', href: '#trainer' },
+  // { label: 'Contact', href: '#contact' },
 ];
 
 const Navbar: React.FC = () => {
