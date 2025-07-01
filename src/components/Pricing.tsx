@@ -74,14 +74,22 @@ const Pricing: React.FC = () => {
               ))}
             </ul>
 
-            <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="w-full bg-k8s-blue hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center"
-            >
-              Register for Day 1
-              <ArrowRight className="ml-2" size={20} />
-            </motion.button>
+            <a
+      href="https://rzp.io/rzp/pPLy6W4x"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-full"
+    >
+      <motion.button
+        whileHover={{ scale: 1.02 }}
+        whileTap={{ scale: 0.98 }}
+        className="w-full bg-k8s-blue hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center"
+      >
+        Register for Day 1
+        <ArrowRight className="ml-2" size={20} />
+      </motion.button>
+    </a>
+
           </motion.div>
 
           {/* Full Bootcamp Card */}
@@ -129,14 +137,22 @@ const Pricing: React.FC = () => {
                 ))}
               </ul>
 
-              <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="w-full bg-white text-k8s-blue font-semibold py-3 px-6 rounded-lg hover:bg-gray-100 transition-colors duration-200 flex items-center justify-center"
-              >
-                Register for Full Bootcamp
-                <ArrowRight className="ml-2" size={20} />
-              </motion.button>
+              <a
+        href="https://rzp.io/rzp/iVAwPNX"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-full"
+      >
+        <motion.button
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+          className="w-full bg-white text-k8s-blue font-semibold py-3 px-6 rounded-lg hover:bg-gray-100 transition-colors duration-200 flex items-center justify-center"
+        >
+          Register for Full Bootcamp
+          <ArrowRight className="ml-2" size={20} />
+        </motion.button>
+      </a>
+
             </div>
           </motion.div>
         </div>
