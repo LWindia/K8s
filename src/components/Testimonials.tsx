@@ -18,7 +18,7 @@ const students = [
   {
     name: "Dibyaraj Datta",
     title: "Process Associate at Netscribes",
-    avatar: "https://media.licdn.com/dms/image/v2/D5603AQENeos_aDytsw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1711478336339?e=1737590400&v=beta&t=eqdh3QVuz82VyuHWF78Bmif0EVec9xdh47F6VqZmmko",
+    avatar: "https://media.licdn.com/dms/image/v2/D5603AQENeos_aDytsw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1711478336339?e=1756944000&v=beta&t=4YHCQx4ngMQbxr1K2Nd9yqKOp-hE4Xu043lBD0SDm9w",
     linkedin: "https://www.linkedin.com/in/dibyaraj-datta-b785661a5/"
   },
   {
@@ -27,32 +27,49 @@ const students = [
     avatar: "https://media.licdn.com/dms/image/v2/D4D03AQH9caqLtsFOKw/profile-displayphoto-shrink_200_200/B4DZPdW6uqGkAY-/0/1734585593402?e=1752710400&v=beta&t=qR3SqHZsyoZjDkWOgqtkmgTnr2cVnkMcjV-LIWSKt9Y",
     linkedin: "https://www.linkedin.com/in/rushikesh-mahindrakar-70b82537/"
   },
-  {
-    name: "Himanshu Sahu",
-    title: "Java Backend Developer",
-    avatar: "https://media.licdn.com/dms/image/v2/D4D03AQFqtDCGoMk54g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1673897788931?e=1737590400&v=beta&t=s2TDcsAQ2oqQ_DvoGT8yyUUaGvsfGDwan4Phjo1RFL0",
-    linkedin: "https://www.linkedin.com/in/himanshu-sahu-2aa357237/"
-  },
+ 
   {
     name: "Pratibha Kokil",
     title: "DevOps | Full Stack Developer",
-    avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHspredHFM_Ig/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729926571919?e=1737590400&v=beta&t=EopKPQqmr1fMBHnO3vVCQ-iI51PNnI8XhKTWumH0CI0",
+    avatar: "https://media.licdn.com/dms/image/v2/D4D35AQHCR1OVhS-5QA/profile-framedphoto-shrink_200_200/B4DZYkZPp9GkAY-/0/1744367320066?e=1751983200&v=beta&t=2JI4gKYtsXoEoU1Fhf3edWcqiqpPEJpH7vyK7_-sB5M",
     linkedin: "https://www.linkedin.com/in/pratibhakokil/"
   },
   {
+      name: "Peeru Babu Vaddaman",
+      title: "AWS DevOps Engineer   ",
+      avatar: "https://media.licdn.com/dms/image/v2/D5635AQGzxDFWF5O7Pw/profile-framedphoto-shrink_200_200/B56ZYy.95VH0Ac-/0/1744612089760?e=1751983200&v=beta&t=dSJHbCpWwqZo6pWB4rnGL7oDK5RrqkGwoXpvqGOLJaQ",
+      linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7281961496195018752"
+    },
+   
+    {
+   
       name: "Jivan Bhardwaj",
       title: "DevOps Engineer at Echelon Edge",
-      avatar: "https://media.licdn.com/dms/image/v2/C4E03AQEvxMngWtOM1g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1628692879304?e=1741824000&v=beta&t=RRN0Njf2W6uv_EPjspUlYUhnQotymJIJG9XOQPUe3Jk",
-      linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7115702316866940929"
-   
-  },
-   {
-    
-      name: "Prateek Srivastava",
-      title: "DevOps Engineer - II at o9 Solutions",
-      avatar: "https://media.licdn.com/dms/image/v2/C5603AQHZ852DgWHZCw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517809201722?e=1741824000&v=beta&t=O643r_bMfCdAF1iw9E46iHEVE2riktLzWrERvtmFh_Q",
+      avatar: "https://media.licdn.com/dms/image/v2/C4E03AQEvxMngWtOM1g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1628692879304?e=1756944000&v=beta&t=kEfxkIT98CHUpK4c-c9WVJckdDTTR4ELXOaF9saoKdU",
       linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7115702316866940929"
     },
+  
+  //  {
+    
+  //     name: "Prateek Srivastava",
+  //     title: "DevOps Engineer - II at o9 Solutions",
+  //     avatar: "https://media.licdn.com/dms/image/v2/C5603AQHZ852DgWHZCw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517809201722?e=1741824000&v=beta&t=O643r_bMfCdAF1iw9E46iHEVE2riktLzWrERvtmFh_Q",
+  //     linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7115702316866940929"
+  //   },
+     {
+      name: "Sanchita Agrawal",
+      title: "DevOps Engineer ",
+      avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHvkoJDpKyN6w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1664520645818?e=1753920000&v=beta&t=7947H-345Q9k7rU55dXuwTB4AcKUhJ7FFQBG2x1LGks",
+      linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7239134220567130113/?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7239134220567130113%2C7240708775475601408%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287240708775475601408%2Curn%3Ali%3Aactivity%3A7239134220567130113%29"
+    },
+     {
+    
+      name: "Rajneesh Pratap Singh",
+      title: "DevOps Engineer || 3x Redhat ",
+      avatar: "https://media.licdn.com/dms/image/v2/D5603AQES0juOhhnKYQ/profile-displayphoto-shrink_200_200/B56ZShRhtAHoAY-/0/1737872515563?e=1753920000&v=beta&t=_Gds_0HYV1BToF-LCnJ3G_x-S1hEoolSqKD82Ll5Wt4",
+      linkedin: "https://www.linkedin.com/in/rajneesh-pratap-singh/"
+    },
+
 ];
 
 const Testimonials: React.FC = () => {

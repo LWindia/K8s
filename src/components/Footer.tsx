@@ -71,8 +71,8 @@ const Footer: React.FC = () => {
             className="lg:col-span-2"
           >
             <div className="flex items-center mb-6">
-              <div className="w-12 h-12 bg-k8s-blue rounded-lg flex items-center justify-center mr-4">
-                <span className="text-white font-bold text-xl">K8</span>
+               <div className="w-12 h-12 rounded-lg flex items-center justify-center mr-2">
+              <img src="/assets/LW-white.png" alt="logo" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold">Kubernetes Bootcamp</h3>
