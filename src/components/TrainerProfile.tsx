@@ -28,7 +28,7 @@ const TrainerProfile: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-white" id='trainer'>
+    <section className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -61,19 +61,18 @@ const TrainerProfile: React.FC = () => {
               
               <div className="relative z-10">
                 <div className="flex items-center mb-6">
-                <div className="w-20 h-20 rounded-full overflow-hidden mr-4 border-2 border-white">
-                  <img
+                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mr-4">
+                     <img
                     src="/assets/vimal.jpeg" // <-- Change this path as per your folder structure
                     alt="Vimal Daga"
                     className="w-full h-full object-cover"
                   />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold">Vimal Daga</h3>
+                    <p className="text-blue-100">Senior DevOps Architect & Kubernetes Expert</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-2xl font-bold">Vimal Daga</h3>
-                  <p className="text-blue-100">Senior DevOps Architect & Kubernetes Expert</p>
-                </div>
-              </div>
-
 
                 <div className="mb-6">
                   <Quote className="text-blue-200 mb-3" size={24} />
@@ -84,7 +83,7 @@ const TrainerProfile: React.FC = () => {
 
                 <div className="space-y-3 mb-6">
                   <p className="text-blue-100">
-                    With over 15 years of experience in DevOps and cloud technologies, Vimal has trained thousands of professionals in Kubernetes, Docker, and modern deployment practices.
+                    With over 23+ years of experience in DevOps and cloud technologies, Vimal has trained thousands of professionals in Kubernetes, Docker, and modern deployment practices.
                   </p>
                   <p className="text-blue-100">
                     He specializes in helping organizations transition to containerized architectures and implement robust CI/CD pipelines using Kubernetes.
@@ -150,6 +149,7 @@ const TrainerProfile: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-white text-k8s-blue font-semibold px-6 py-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
+                onClick={() => window.location.href = 'https://rzp.io/rzp/iVAwPNX'}
               >
                 Enroll Now
               </motion.button>
