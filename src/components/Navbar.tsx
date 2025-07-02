@@ -7,83 +7,93 @@ const navLinks = [
   { label: 'What You Will Learn', href: '#learn' },
   { label: 'Curriculum', href: '#curriculum' },
   { label: 'Pricing', href: '#pricing' },
-  { label: 'Mentor', href: '#trainer' },
-  // { label: 'Contact', href: '#contact' }, // ✅ Contact added back
+  { label: 'Trainer', href: '#trainer' },
+  { label: 'Contact', href: '#contact' },
 ];
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Smooth scroll to section
+  // Smooth scroll handler
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
     e.preventDefault();
     setMenuOpen(false);
     const target = document.querySelector(href);
     if (target) {
       window.scrollTo({
-        top: (target as HTMLElement).offsetTop - 60,
+        top: (target as HTMLElement).offsetTop - 72, // offset for navbar height
         behavior: 'smooth',
       });
     }
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur bg-slate-900/80 border-b border-slate-800/50 shadow-md">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
-        {/* Logo / Brand */}
-        <a href="#hero" className="flex items-center gap-2 text-white font-bold text-lg tracking-tight">
-          <div className="w-10 h-10 rounded-md flex items-center justify-center">
-            <img src="/assets/LW-white.png" alt="logo" className="w-full h-full object-contain" />
-          </div>
-          <span className="hidden sm:inline text-base">Kubernetes Bootcamp</span>
+    <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur bg-slate-900/70 border-b border-slate-800 shadow-sm">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+        {/* Logo/Brand */}
+        <a href="#hero" className="flex items-center gap-2 text-white font-bold text-xl tracking-tight">
+          <img src="/assets/LW-white.png" alt="Linux World Logo" className="h-10 w-auto mr-2" />
+          <span className="hidden sm:inline">Kubernetes Bootcamp</span>
         </a>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-2 lg:gap-3">
+        {/* Desktop Nav */}
+        <div className="hidden md:flex items-center gap-2 lg:gap-4">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className="px-3 py-2 rounded-md text-gray-200 hover:text-k8s-blue hover:bg-white/10 transition-colors duration-200 text-sm font-medium"
+              className="px-3 py-2 rounded-lg text-gray-200 hover:text-k8s-blue hover:bg-white/10 transition-colors duration-200 text-sm font-medium"
             >
               {link.label}
             </a>
           ))}
+          <a
+            href="#pricing"
+            onClick={(e) => handleNavClick(e, '#pricing')}
+            className="ml-4 px-5 py-2 rounded-lg bg-k8s-blue text-white font-semibold shadow hover:bg-blue-700 transition-colors duration-200 text-sm"
+          >
+            Register
+          </a>
         </div>
 
-        {/* Hamburger Menu (Mobile) */}
+        {/* Mobile Hamburger */}
         <button
-          className="md:hidden p-2 text-gray-200 hover:bg-white/10 rounded-md transition-colors duration-200"
-          onClick={() => setMenuOpen((prev) => !prev)}
-          aria-label="Toggle Menu"
+          className="md:hidden p-2 rounded-lg text-gray-200 hover:bg-white/10 focus:outline-none"
+          onClick={() => setMenuOpen((v) => !v)}
+          aria-label="Open menu"
         >
-          {menuOpen ? <X size={24} /> : <Menu size={24} />}
+          {menuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
-      {/* Mobile Navigation Menu */}
+      {/* Mobile Menu */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -10 }}
+            initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
+            exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.2 }}
-            className="md:hidden bg-slate-900/95 backdrop-blur border-t border-slate-800/50 px-4 py-3 shadow-xl"
+            className="md:hidden bg-slate-900/95 backdrop-blur border-b border-slate-800 px-4 pb-6 pt-2 flex flex-col gap-2 shadow-lg"
           >
-            <div className="flex flex-col gap-2">
-              {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={(e) => handleNavClick(e, link.href)}
-                  className="block px-3 py-2 rounded-md text-gray-200 hover:text-k8s-blue hover:bg-white/10 transition-colors duration-200 text-sm font-medium"
-                >
-                  {link.label}
-                </a>
-              ))}
-            </div>
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={(e) => handleNavClick(e, link.href)}
+                className="block px-3 py-3 rounded-lg text-gray-200 hover:text-k8s-blue hover:bg-white/10 transition-colors duration-200 text-base font-medium"
+              >
+                {link.label}
+              </a>
+            ))}
+            <a
+              href="#pricing"
+              onClick={(e) => handleNavClick(e, '#pricing')}
+              className="mt-2 px-5 py-3 rounded-lg bg-k8s-blue text-white font-semibold shadow hover:bg-blue-700 transition-colors duration-200 text-base text-center"
+            >
+              Register
+            </a>
           </motion.div>
         )}
       </AnimatePresence>
@@ -91,4 +101,4 @@ const Navbar: React.FC = () => {
   );
 };
 
-export default Navbar;
+export default Navbar; 
